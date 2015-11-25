@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tuesda.walker.circlerefresh.CircleRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:AniBackColor="@color/primary"
+    app:AniForeColor="#EEEEEE"
+    app:CircleSmaller="6">
+
+    <RelativeLayout
+        android:id="@+id/content_wrapper"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/inner_content_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true">
+
+        </FrameLayout>
+
+        <com.tomer.infor.Utils.AnimatedFab
+            android:id="@+id/sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="51dp"
+            android:layout_toLeftOf="@+id/friendship"
+            android:layout_toStartOf="@+id/friendship"
+            android:src="@drawable/sex"
+            app:backgroundTint="@color/md_red"
+            app:borderWidth="0dp"
+            app:elevation="6dp"
+            app:fabSize="normal"
+            app:pressedTranslationZ="12dp" />
+
+        <com.tomer.infor.Utils.AnimatedFab
+            android:id="@+id/friendship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="51dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/friendship"
+            app:backgroundTint="@color/md_green"
+            app:borderWidth="0dp"
+            app:elevation="6dp"
+            app:fabSize="normal"
+            app:pressedTranslationZ="12dp" />
+
+        <com.tomer.infor.Utils.AnimatedFab
+            android:id="@+id/relationship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="51dp"
+            android:layout_toEndOf="@+id/friendship"
+            android:layout_toRightOf="@+id/friendship"
+            android:src="@drawable/relationship"
+            app:backgroundTint="@color/md_blue"
+            app:borderWidth="0dp"
+            app:elevation="6dp"
+            app:fabSize="normal"
+            app:pressedTranslationZ="12dp" />
+
+        <com.tomer.infor.Utils.AnimatedTextView
+            android:id="@+id/skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:text="@string/skip_this_person"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</com.tuesda.walker.circlerefresh.CircleRefreshLayout>

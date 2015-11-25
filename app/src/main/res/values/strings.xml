@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Infor</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="friends">Friends</string>
+    <string name="home">Home</string>
+    <string name="chats">Typer</string>
+    <string name="facebook_app_id">1591585301129966</string>
+    <string name="chats_message_error">You can\'t message any friend yet</string>
+    <string name="friends_message_error">Let\'s see what he/she wrote about you</string>
+    <string name="feature_not_available">This feature is not yet available</string>
+    <string name="facebook_greeting">Hi! \n Please Log In with Facebook</string>
+    <string name="skip_this_person"><u>Skip this person</u></string>
+</resources>
